@@ -1,0 +1,460 @@
+[INFO ] 2018-12-01 15:21:26.647 [restartedMain] App - Starting App on bj-m-2106520a with PID 8028 (/Users/biyun3/work/test/target/classes started by biyun3 in /Users/biyun3/work/test)
+[INFO ] 2018-12-01 15:21:26.651 [restartedMain] App - No active profile set, falling back to default profiles: default
+[INFO ] 2018-12-01 15:21:26.745 [restartedMain] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@43b93889: startup date [Sat Dec 01 15:21:26 CST 2018]; root of context hierarchy
+[INFO ] 2018-12-01 15:21:27.454 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncConfig' of type [com.ad.weibo.adinf.AsyncConfig$$EnhancerBySpringCGLIB$$61f0a077] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-12-01 15:21:27.457 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 
+[INFO ] 2018-12-01 15:21:27.654 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$6f1f8f6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-12-01 15:21:28.036 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2018-12-01 15:21:28.053 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-12-01 15:21:28.060 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2018-12-01 15:21:28.061 [restartedMain] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[INFO ] 2018-12-01 15:21:28.064 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/biyun3/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2018-12-01 15:21:28.117 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-12-01 15:21:28.118 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1377 ms
+[INFO ] 2018-12-01 15:21:28.173 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-12-01 15:21:28.177 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-12-01 15:21:28.177 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-12-01 15:21:28.177 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-12-01 15:21:28.177 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-12-01 15:21:28.177 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+[INFO ] 2018-12-01 15:21:28.516 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-12-01 15:21:28.666 [restartedMain] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@43b93889: startup date [Sat Dec 01 15:21:26 CST 2018]; root of context hierarchy
+[INFO ] 2018-12-01 15:21:28.711 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/kafka/send]}" onto public void com.ad.weibo.adinf.KafkaProvider.send(java.lang.String,java.lang.String)
+[INFO ] 2018-12-01 15:21:28.713 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/test/getUid/{uid}]}" onto public java.lang.String com.ad.weibo.adinf.controller.CreativeController.getUid(java.lang.Integer)
+[INFO ] 2018-12-01 15:21:28.713 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/test/test]}" onto public java.lang.String com.ad.weibo.adinf.controller.CreativeController.methodtest()
+[INFO ] 2018-12-01 15:21:28.714 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/templatetest],methods=[GET]}" onto public java.lang.String com.ad.weibo.adinf.controller.Testboard.templatetest(org.springframework.ui.ModelMap)
+[INFO ] 2018-12-01 15:21:28.714 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/getInfo]}" onto public java.lang.String com.ad.weibo.adinf.controller.Usercontroller.getInfo()
+[INFO ] 2018-12-01 15:21:28.714 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.ad.weibo.adinf.controller.Usercontroller.helloWorld()
+[INFO ] 2018-12-01 15:21:28.716 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-12-01 15:21:28.717 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-12-01 15:21:28.755 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-12-01 15:21:28.755 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN ] 2018-12-01 15:21:28.809 [restartedMain] TemplateMode - [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+[INFO ] 2018-12-01 15:21:29.006 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2018-12-01 15:21:29.042 [restartedMain] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-12-01 15:21:29.065 [restartedMain] DefaultLifecycleProcessor - Starting beans in phase 2147483547
+[INFO ] 2018-12-01 15:21:29.084 [restartedMain] ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.13.4.162:9192]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[INFO ] 2018-12-01 15:21:29.127 [restartedMain] AppInfoParser - Kafka version : 1.0.2
+[INFO ] 2018-12-01 15:21:29.127 [restartedMain] AppInfoParser - Kafka commitId : 2a121f7b1d402825
+[INFO ] 2018-12-01 15:21:29.130 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 
+[INFO ] 2018-12-01 15:21:29.141 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-12-01 15:21:29.160 [restartedMain] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-12-01 15:21:29.176 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2018-12-01 15:21:29.181 [restartedMain] App - Started App in 3.349 seconds (JVM running for 5.313)
+[INFO ] 2018-12-01 15:21:37.997 [http-nio-8080-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-12-01 15:21:37.997 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-12-01 15:21:38.012 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+[INFO ] 2018-12-01 15:21:38.033 [http-nio-8080-exec-1] Testboard - log info
+[INFO ] 2018-12-01 15:22:28.374 [Thread-17] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@43b93889: startup date [Sat Dec 01 15:21:26 CST 2018]; root of context hierarchy
+[INFO ] 2018-12-01 15:22:28.377 [Thread-17] DefaultLifecycleProcessor - Stopping beans in phase 2147483547
+[INFO ] 2018-12-01 15:22:28.379 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ThreadPoolTaskScheduler - Shutting down ExecutorService
+[INFO ] 2018-12-01 15:22:28.383 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+[INFO ] 2018-12-01 15:22:28.383 [Thread-17] DefaultLifecycleProcessor - Stopping beans in phase 0
+[INFO ] 2018-12-01 15:22:28.384 [Thread-17] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2018-12-01 15:22:32.218 [restartedMain] App - Starting App on bj-m-2106520a with PID 8048 (/Users/biyun3/work/test/target/classes started by biyun3 in /Users/biyun3/work/test)
+[INFO ] 2018-12-01 15:22:32.220 [restartedMain] App - No active profile set, falling back to default profiles: default
+[INFO ] 2018-12-01 15:22:32.254 [restartedMain] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@482a68e1: startup date [Sat Dec 01 15:22:32 CST 2018]; root of context hierarchy
+[INFO ] 2018-12-01 15:22:32.852 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncConfig' of type [com.ad.weibo.adinf.AsyncConfig$$EnhancerBySpringCGLIB$$8658a3a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-12-01 15:22:32.855 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 
+[INFO ] 2018-12-01 15:22:32.906 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$93879296] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-12-01 15:22:33.183 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2018-12-01 15:22:33.196 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-12-01 15:22:33.202 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2018-12-01 15:22:33.203 [restartedMain] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[INFO ] 2018-12-01 15:22:33.206 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/biyun3/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2018-12-01 15:22:33.253 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-12-01 15:22:33.253 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1002 ms
+[INFO ] 2018-12-01 15:22:33.302 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-12-01 15:22:33.304 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-12-01 15:22:33.305 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-12-01 15:22:33.305 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-12-01 15:22:33.305 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-12-01 15:22:33.305 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+[INFO ] 2018-12-01 15:22:33.539 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-12-01 15:22:33.676 [restartedMain] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@482a68e1: startup date [Sat Dec 01 15:22:32 CST 2018]; root of context hierarchy
+[INFO ] 2018-12-01 15:22:33.712 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/kafka/send]}" onto public void com.ad.weibo.adinf.KafkaProvider.send(java.lang.String,java.lang.String)
+[INFO ] 2018-12-01 15:22:33.713 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/test/getUid/{uid}]}" onto public java.lang.String com.ad.weibo.adinf.controller.CreativeController.getUid(java.lang.Integer)
+[INFO ] 2018-12-01 15:22:33.713 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/test/test]}" onto public java.lang.String com.ad.weibo.adinf.controller.CreativeController.methodtest()
+[INFO ] 2018-12-01 15:22:33.713 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/templatetest],methods=[GET]}" onto public java.lang.String com.ad.weibo.adinf.controller.Testboard.templatetest(org.springframework.ui.ModelMap)
+[INFO ] 2018-12-01 15:22:33.714 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/getInfo]}" onto public java.lang.String com.ad.weibo.adinf.controller.Usercontroller.getInfo()
+[INFO ] 2018-12-01 15:22:33.714 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.ad.weibo.adinf.controller.Usercontroller.helloWorld()
+[INFO ] 2018-12-01 15:22:33.716 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-12-01 15:22:33.717 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-12-01 15:22:33.740 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-12-01 15:22:33.740 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN ] 2018-12-01 15:22:33.784 [restartedMain] TemplateMode - [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+[INFO ] 2018-12-01 15:22:33.942 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2018-12-01 15:22:33.963 [restartedMain] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-12-01 15:22:33.980 [restartedMain] DefaultLifecycleProcessor - Starting beans in phase 2147483547
+[INFO ] 2018-12-01 15:22:33.994 [restartedMain] ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.13.4.162:9192]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[INFO ] 2018-12-01 15:22:34.033 [restartedMain] AppInfoParser - Kafka version : 1.0.2
+[INFO ] 2018-12-01 15:22:34.034 [restartedMain] AppInfoParser - Kafka commitId : 2a121f7b1d402825
+[INFO ] 2018-12-01 15:22:34.037 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 
+[INFO ] 2018-12-01 15:22:34.050 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-12-01 15:22:34.068 [restartedMain] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-12-01 15:22:34.080 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2018-12-01 15:22:34.086 [restartedMain] App - Started App in 2.421 seconds (JVM running for 4.095)
+[INFO ] 2018-12-01 15:22:38.142 [http-nio-8080-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-12-01 15:22:38.142 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-12-01 15:22:38.158 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+[INFO ] 2018-12-01 15:22:38.180 [http-nio-8080-exec-1] Testboard - log info
+[INFO ] 2018-12-01 15:23:10.083 [Thread-16] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@482a68e1: startup date [Sat Dec 01 15:22:32 CST 2018]; root of context hierarchy
+[INFO ] 2018-12-01 15:23:10.085 [Thread-16] DefaultLifecycleProcessor - Stopping beans in phase 2147483547
+[INFO ] 2018-12-01 15:23:10.091 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ThreadPoolTaskScheduler - Shutting down ExecutorService
+[INFO ] 2018-12-01 15:23:10.097 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+[INFO ] 2018-12-01 15:23:10.097 [Thread-16] DefaultLifecycleProcessor - Stopping beans in phase 0
+[INFO ] 2018-12-01 15:23:10.098 [Thread-16] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2018-12-01 15:23:12.765 [restartedMain] App - Starting App on bj-m-2106520a with PID 8059 (/Users/biyun3/work/test/target/classes started by biyun3 in /Users/biyun3/work/test)
+[INFO ] 2018-12-01 15:23:12.767 [restartedMain] App - No active profile set, falling back to default profiles: default
+[INFO ] 2018-12-01 15:23:12.804 [restartedMain] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55d745f0: startup date [Sat Dec 01 15:23:12 CST 2018]; root of context hierarchy
+[INFO ] 2018-12-01 15:23:13.506 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncConfig' of type [com.ad.weibo.adinf.AsyncConfig$$EnhancerBySpringCGLIB$$4b94b1a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-12-01 15:23:13.509 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 
+[INFO ] 2018-12-01 15:23:13.545 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$58c3a096] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-12-01 15:23:13.868 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2018-12-01 15:23:13.880 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-12-01 15:23:13.887 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2018-12-01 15:23:13.887 [restartedMain] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[INFO ] 2018-12-01 15:23:13.890 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/biyun3/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2018-12-01 15:23:13.935 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-12-01 15:23:13.935 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1133 ms
+[INFO ] 2018-12-01 15:23:13.986 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-12-01 15:23:13.989 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-12-01 15:23:13.989 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-12-01 15:23:13.989 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-12-01 15:23:13.989 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-12-01 15:23:13.989 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+[INFO ] 2018-12-01 15:23:14.214 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-12-01 15:23:14.345 [restartedMain] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55d745f0: startup date [Sat Dec 01 15:23:12 CST 2018]; root of context hierarchy
+[INFO ] 2018-12-01 15:23:14.382 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/kafka/send]}" onto public void com.ad.weibo.adinf.KafkaProvider.send(java.lang.String,java.lang.String)
+[INFO ] 2018-12-01 15:23:14.383 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/test/getUid/{uid}]}" onto public java.lang.String com.ad.weibo.adinf.controller.CreativeController.getUid(java.lang.Integer)
+[INFO ] 2018-12-01 15:23:14.383 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/test/test]}" onto public java.lang.String com.ad.weibo.adinf.controller.CreativeController.methodtest()
+[INFO ] 2018-12-01 15:23:14.383 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/templatetest],methods=[GET]}" onto public java.lang.String com.ad.weibo.adinf.controller.Testboard.templatetest(org.springframework.ui.ModelMap)
+[INFO ] 2018-12-01 15:23:14.384 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/getInfo]}" onto public java.lang.String com.ad.weibo.adinf.controller.Usercontroller.getInfo()
+[INFO ] 2018-12-01 15:23:14.384 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.ad.weibo.adinf.controller.Usercontroller.helloWorld()
+[INFO ] 2018-12-01 15:23:14.386 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-12-01 15:23:14.386 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-12-01 15:23:14.410 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-12-01 15:23:14.410 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN ] 2018-12-01 15:23:14.459 [restartedMain] TemplateMode - [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+[INFO ] 2018-12-01 15:23:14.619 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2018-12-01 15:23:14.642 [restartedMain] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-12-01 15:23:14.663 [restartedMain] DefaultLifecycleProcessor - Starting beans in phase 2147483547
+[INFO ] 2018-12-01 15:23:14.680 [restartedMain] ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.13.4.162:9192]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[INFO ] 2018-12-01 15:23:14.723 [restartedMain] AppInfoParser - Kafka version : 1.0.2
+[INFO ] 2018-12-01 15:23:14.723 [restartedMain] AppInfoParser - Kafka commitId : 2a121f7b1d402825
+[INFO ] 2018-12-01 15:23:14.725 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 
+[INFO ] 2018-12-01 15:23:14.734 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-12-01 15:23:14.750 [restartedMain] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-12-01 15:23:14.760 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2018-12-01 15:23:14.764 [restartedMain] App - Started App in 2.858 seconds (JVM running for 3.595)
+[INFO ] 2018-12-01 15:23:17.313 [http-nio-8080-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-12-01 15:23:17.313 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-12-01 15:23:17.328 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+[INFO ] 2018-12-01 15:23:17.345 [http-nio-8080-exec-1] Testboard - log info
+[INFO ] 2018-12-01 15:23:48.649 [Thread-15] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55d745f0: startup date [Sat Dec 01 15:23:12 CST 2018]; root of context hierarchy
+[INFO ] 2018-12-01 15:23:48.651 [Thread-15] DefaultLifecycleProcessor - Stopping beans in phase 2147483547
+[INFO ] 2018-12-01 15:23:48.654 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ThreadPoolTaskScheduler - Shutting down ExecutorService
+[INFO ] 2018-12-01 15:23:48.658 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+[INFO ] 2018-12-01 15:23:48.658 [Thread-15] DefaultLifecycleProcessor - Stopping beans in phase 0
+[INFO ] 2018-12-01 15:23:48.659 [Thread-15] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2018-12-01 15:23:52.506 [restartedMain] App - Starting App on bj-m-2106520a with PID 8070 (/Users/biyun3/work/test/target/classes started by biyun3 in /Users/biyun3/work/test)
+[INFO ] 2018-12-01 15:23:52.509 [restartedMain] App - No active profile set, falling back to default profiles: default
+[INFO ] 2018-12-01 15:23:52.539 [restartedMain] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21f410d0: startup date [Sat Dec 01 15:23:52 CST 2018]; root of context hierarchy
+[INFO ] 2018-12-01 15:23:53.172 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncConfig' of type [com.ad.weibo.adinf.AsyncConfig$$EnhancerBySpringCGLIB$$a5912f9f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-12-01 15:23:53.175 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 
+[INFO ] 2018-12-01 15:23:53.209 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$b2c01e93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-12-01 15:23:53.487 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2018-12-01 15:23:53.501 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-12-01 15:23:53.508 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2018-12-01 15:23:53.508 [restartedMain] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[INFO ] 2018-12-01 15:23:53.511 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/biyun3/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+[INFO ] 2018-12-01 15:23:53.557 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-12-01 15:23:53.557 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1020 ms
+[INFO ] 2018-12-01 15:23:53.622 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-12-01 15:23:53.625 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-12-01 15:23:53.625 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-12-01 15:23:53.625 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-12-01 15:23:53.625 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-12-01 15:23:53.625 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+[INFO ] 2018-12-01 15:23:53.770 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-12-01 15:23:53.975 [restartedMain] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21f410d0: startup date [Sat Dec 01 15:23:52 CST 2018]; root of context hierarchy
+[INFO ] 2018-12-01 15:23:54.014 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/kafka/send]}" onto public void com.ad.weibo.adinf.KafkaProvider.send(java.lang.String,java.lang.String)
+[INFO ] 2018-12-01 15:23:54.015 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/test/getUid/{uid}]}" onto public java.lang.String com.ad.weibo.adinf.controller.CreativeController.getUid(java.lang.Integer)
+[INFO ] 2018-12-01 15:23:54.015 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/test/test]}" onto public java.lang.String com.ad.weibo.adinf.controller.CreativeController.methodtest()
+[INFO ] 2018-12-01 15:23:54.015 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/templatetest],methods=[GET]}" onto public java.lang.String com.ad.weibo.adinf.controller.Testboard.templatetest(org.springframework.ui.ModelMap)
+[INFO ] 2018-12-01 15:23:54.016 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/getInfo]}" onto public java.lang.String com.ad.weibo.adinf.controller.Usercontroller.getInfo()
+[INFO ] 2018-12-01 15:23:54.016 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.ad.weibo.adinf.controller.Usercontroller.helloWorld()
+[INFO ] 2018-12-01 15:23:54.018 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-12-01 15:23:54.018 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-12-01 15:23:54.040 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-12-01 15:23:54.041 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN ] 2018-12-01 15:23:54.077 [restartedMain] TemplateMode - [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+[INFO ] 2018-12-01 15:23:54.226 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2018-12-01 15:23:54.251 [restartedMain] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-12-01 15:23:54.269 [restartedMain] DefaultLifecycleProcessor - Starting beans in phase 2147483547
+[INFO ] 2018-12-01 15:23:54.284 [restartedMain] ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.13.4.162:9192]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[INFO ] 2018-12-01 15:23:54.324 [restartedMain] AppInfoParser - Kafka version : 1.0.2
+[INFO ] 2018-12-01 15:23:54.324 [restartedMain] AppInfoParser - Kafka commitId : 2a121f7b1d402825
+[INFO ] 2018-12-01 15:23:54.326 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 
+[INFO ] 2018-12-01 15:23:54.334 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 2018-12-01 15:23:54.350 [restartedMain] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-12-01 15:23:54.359 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2018-12-01 15:23:54.363 [restartedMain] App - Started App in 2.41 seconds (JVM running for 4.08)
+[INFO ] 2018-12-01 15:23:57.359 [http-nio-8080-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-12-01 15:23:57.359 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-12-01 15:23:57.375 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+[INFO ] 2018-12-01 15:23:57.399 [http-nio-8080-exec-1] Testboard - log info
+[INFO ] 2018-12-01 15:24:33.456 [Thread-15] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@21f410d0: startup date [Sat Dec 01 15:23:52 CST 2018]; root of context hierarchy
+[INFO ] 2018-12-01 15:24:33.458 [Thread-15] DefaultLifecycleProcessor - Stopping beans in phase 2147483547
+[INFO ] 2018-12-01 15:24:33.463 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] ThreadPoolTaskScheduler - Shutting down ExecutorService
+[INFO ] 2018-12-01 15:24:33.470 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+[INFO ] 2018-12-01 15:24:33.470 [Thread-15] DefaultLifecycleProcessor - Stopping beans in phase 0
+[INFO ] 2018-12-01 15:24:33.471 [Thread-15] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2018-12-01 15:52:22.791 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 1027 ms
+[INFO ] 2018-12-01 15:52:23.080 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-12-01 15:52:23.212 [restartedMain] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@515ba186: startup date [Sat Dec 01 15:52:21 CST 2018]; root of context hierarchy
+[INFO ] 2018-12-01 15:52:23.247 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/kafka/send]}" onto public void com.ad.weibo.adinf.KafkaProvider.send(java.lang.String,java.lang.String)
+[INFO ] 2018-12-01 15:52:23.248 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/test/getUid/{uid}]}" onto public java.lang.String com.ad.weibo.adinf.controller.CreativeController.getUid(java.lang.Integer)
+[INFO ] 2018-12-01 15:52:23.248 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/test/test]}" onto public java.lang.String com.ad.weibo.adinf.controller.CreativeController.methodtest()
+[INFO ] 2018-12-01 15:52:23.248 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/templatetest],methods=[GET]}" onto public java.lang.String com.ad.weibo.adinf.controller.Testboard.templatetest(org.springframework.ui.ModelMap)
+[INFO ] 2018-12-01 15:52:23.248 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/getInfo]}" onto public java.lang.String com.ad.weibo.adinf.controller.Usercontroller.getInfo()
+[INFO ] 2018-12-01 15:52:23.249 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.ad.weibo.adinf.controller.Usercontroller.helloWorld()
+[INFO ] 2018-12-01 15:52:23.250 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-12-01 15:52:23.251 [restartedMain] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-12-01 15:52:23.275 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-12-01 15:52:23.275 [restartedMain] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[WARN ] 2018-12-01 15:52:23.320 [restartedMain] TemplateMode - [THYMELEAF][restartedMain] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+[INFO ] 2018-12-01 15:52:30.621 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-12-01 15:52:30.637 [http-nio-8080-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
